@@ -1,0 +1,15 @@
+[
+	{
+		"email":"as@example.com",
+		"password":"Abcd@123",
+		"products": ["ADIDAS ORIGINAL", "IPHONE 13 PRO"],
+		"country":"India"
+	},
+	{
+		"email":"pm@example.com",
+		"password":"Qwer@123",
+		"products": ["ZARA COAT 3"],
+		"country":"China"
+	}
+
+]

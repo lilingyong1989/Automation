@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-18T18:24:38 MYT" name="Suite" finished-at="2024-08-18T18:25:46 MYT" duration-ms="67729">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidation.errorValid01()[pri:0, instance:e2e.ErrorValidation@58cbafc2]" name="errorValid01" class="e2e.ErrorValidation"/>
+      </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="FullTest.submitOrder01(java.util.HashMap)[pri:0, instance:e2e.FullTest@52b1beb6]" name="submitOrder01" class="e2e.FullTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2024-08-18T18:24:38 MYT" name="Error Validation Test" finished-at="2024-08-18T18:25:25 MYT" duration-ms="46346">
+      <class name="e2e.ErrorValidation">
+        <test-method is-config="true" signature="openWebpage()[pri:0, instance:e2e.ErrorValidation@58cbafc2]" started-at="2024-08-18T18:24:39 MYT" name="openWebpage" finished-at="2024-08-18T18:25:07 MYT" duration-ms="28245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openWebpage -->
+        <test-method signature="errorValid01()[pri:0, instance:e2e.ErrorValidation@58cbafc2]" started-at="2024-08-18T18:25:07 MYT" name="errorValid01" finished-at="2024-08-18T18:25:09 MYT" duration-ms="1957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorValid01 -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:e2e.ErrorValidation@58cbafc2]" started-at="2024-08-18T18:25:09 MYT" name="cleanup" finished-at="2024-08-18T18:25:10 MYT" duration-ms="1459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method is-config="true" signature="openWebpage()[pri:0, instance:e2e.ErrorValidation@58cbafc2]" started-at="2024-08-18T18:25:10 MYT" name="openWebpage" finished-at="2024-08-18T18:25:21 MYT" duration-ms="10649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openWebpage -->
+        <test-method signature="errorValid02()[pri:0, instance:e2e.ErrorValidation@58cbafc2]" started-at="2024-08-18T18:25:21 MYT" name="errorValid02" finished-at="2024-08-18T18:25:22 MYT" duration-ms="1037" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<Incorrect email or passwords.> but was:<Incorrect email or password.>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<Incorrect email or passwords.> but was:<Incorrect email or password.>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+at e2e.ErrorValidation.errorValid02(ErrorValidation.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorValid02 -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:e2e.ErrorValidation@58cbafc2]" started-at="2024-08-18T18:25:23 MYT" name="cleanup" finished-at="2024-08-18T18:25:25 MYT" duration-ms="1663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- e2e.ErrorValidation -->
+    </test> <!-- Error Validation Test -->
+    <test started-at="2024-08-18T18:24:38 MYT" name="Submit Order Test" finished-at="2024-08-18T18:25:46 MYT" duration-ms="67729">
+      <class name="e2e.FullTest">
+        <test-method is-config="true" signature="openWebpage()[pri:0, instance:e2e.FullTest@52b1beb6]" started-at="2024-08-18T18:24:39 MYT" name="openWebpage" finished-at="2024-08-18T18:25:06 MYT" duration-ms="26724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openWebpage -->
+        <test-method signature="submitOrder01(java.util.HashMap)[pri:0, instance:e2e.FullTest@52b1beb6]" started-at="2024-08-18T18:25:06 MYT" name="submitOrder01" data-provider="getTestData" finished-at="2024-08-18T18:25:19 MYT" duration-ms="13527" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=India, password=Abcd@123, email=as@example.com, products=[ADIDAS ORIGINAL, IPHONE 13 PRO]}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder01 -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:e2e.FullTest@52b1beb6]" started-at="2024-08-18T18:25:19 MYT" name="cleanup" finished-at="2024-08-18T18:25:21 MYT" duration-ms="1888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method is-config="true" signature="openWebpage()[pri:0, instance:e2e.FullTest@52b1beb6]" started-at="2024-08-18T18:25:21 MYT" name="openWebpage" finished-at="2024-08-18T18:25:33 MYT" duration-ms="12222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openWebpage -->
+        <test-method signature="submitOrder01(java.util.HashMap)[pri:0, instance:e2e.FullTest@52b1beb6]" started-at="2024-08-18T18:25:33 MYT" name="submitOrder01" data-provider="getTestData" finished-at="2024-08-18T18:25:45 MYT" duration-ms="11061" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=China, password=Qwer@123, email=pm@example.com, products=[ZARA COAT 3]}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder01 -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:e2e.FullTest@52b1beb6]" started-at="2024-08-18T18:25:45 MYT" name="cleanup" finished-at="2024-08-18T18:25:46 MYT" duration-ms="1699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- e2e.FullTest -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
+</testng-results>
