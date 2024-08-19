@@ -17,7 +17,7 @@ import e2e.pageObjects.ProductPage;
 
 public class FullTest extends Base {
 	List<String> orderIds;
-	//new code
+	//new codes
 
 	@Test(dataProvider="getTestData",groups= {"Purchase"},retryAnalyzer=Retry.class)
 	public void submitOrder01(HashMap<Object,Object>input) throws IOException, InterruptedException {
